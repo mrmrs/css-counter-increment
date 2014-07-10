@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "counter-increment"
   ],
   "css-counter-increment": {
     "type": "git",
