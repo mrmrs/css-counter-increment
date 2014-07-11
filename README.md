@@ -24,21 +24,21 @@ or download the css on github and include in your project.
 .ci-none {  counter-increment: none; }
 .ci-i {     counter-increment: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .ci-plus-ns {  counter-increment: count; }
   .ci-minus-ns { counter-increment: count -1; }
   .ci-none-ns {  counter-increment: none; }
   .ci-i-ns {     counter-increment: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .ci-plus-m {  counter-increment: count; }
   .ci-minus-m { counter-increment: count -1; }
   .ci-none-m {  counter-increment: none; }
   .ci-i-m {     counter-increment: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .ci-plus-l {  counter-increment: count; }
   .ci-minus-l { counter-increment: count -1; }
   .ci-none-l {  counter-increment: none; }
