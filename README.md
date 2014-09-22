@@ -9,13 +9,18 @@
 *  -l  = large
 
 ## Install
+Grab the css partial from github and include it in your project or alternatively
+you can install it via npm:
 ```
 npm install --save-dev css-counter-increment
 ```
-or download the css on github and include in your project.
+View on [npm](https://www.npmjs.org/package/css-counter-increment)
+
 
 ## File Size
 
+881B counter-increment.css
+698B counter-increment.min.css
 
 ## The Code
 ```
