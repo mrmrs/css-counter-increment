@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-counter-increment)
 ## File Size
 
 881B counter-increment.css
-698B counter-increment.min.css
+698B counter-increment.min.css 
+184B minified and gzipped
 
 ## The Code
 ```
