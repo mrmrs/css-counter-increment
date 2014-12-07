@@ -1,5 +1,6 @@
 {
   "name": "css-counter-increment",
+  "style": "counter-increment.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-counter-increment",
   "description": "Css module of single purpose classes for counter increment",
