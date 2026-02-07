@@ -8,10 +8,10 @@
 .ci-i {     counter-increment: inherit; }
 
 @media screen and (min-width: 48em) {
-  .ci-plus-ns {  counter-increment: count; }
-  .ci-minus-ns { counter-increment: count -1; }
-  .ci-none-ns {  counter-increment: none; }
-  .ci-i-ns {     counter-increment: inherit; }
+  .ci-plus-s {  counter-increment: count; }
+  .ci-minus-s { counter-increment: count -1; }
+  .ci-none-s {  counter-increment: none; }
+  .ci-i-s {     counter-increment: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
