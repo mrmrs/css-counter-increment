@@ -1,38 +1,44 @@
 {
   "name": "css-counter-increment",
-  "style": "counter-increment.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-counter-increment",
-  "description": "Css module of single purpose classes for counter increment",
+  "version": "2.0.0",
+  "description": "Functional CSS for counter-increment",
+  "style": "dist/counter-increment.css",
+  "main": "dist/counter-increment.css",
+  "exports": {
+    ".": "./dist/counter-increment.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "counter-increment"
+    "counter-increment",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-counter-increment": {
+  "homepage": "https://github.com/mrmrs/css-counter-increment",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-counter-increment.git"
+    "url": "https://github.com/mrmrs/css-counter-increment.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-counter-increment/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-counter-increment/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
