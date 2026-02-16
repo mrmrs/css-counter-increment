@@ -1,120 +1,84 @@
-# css-counter-increment 1.0.6
+# css-counter-increment
 
-Css module of single purpose classes for counter increment
+Functional CSS for counter-increment
 
-#### Stats
+## Filesize
 
-214 | 16 | 16
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/counter-increment.css` | 889 bytes |
+| `dist/counter-increment.min.css` | 659 bytes (171 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-counter-increment
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-counter-increment
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-counter-increment.git
+```sh
+npm install css-counter-increment
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-counter-increment";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-counter-increment@1.0.6/css/css-counter-increment.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-counter-increment">
+<link rel="stylesheet" href="https://unpkg.com/css-counter-increment/dist/counter-increment.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   COUNTER INCREMENT
-*/
-.ci-plus { counter-increment: count; }
-.ci-minus { counter-increment: count -1; }
-.ci-none { counter-increment: none; }
-.ci-i { counter-increment: inherit; }
-@media screen and (min-width: 48em) {
- .ci-plus-ns { counter-increment: count; }
- .ci-minus-ns { counter-increment: count -1; }
- .ci-none-ns { counter-increment: none; }
- .ci-i-ns { counter-increment: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .ci-plus-m { counter-increment: count; }
- .ci-minus-m { counter-increment: count -1; }
- .ci-none-m { counter-increment: none; }
- .ci-i-m { counter-increment: inherit; }
-}
-@media screen and (min-width: 64em) {
- .ci-plus-l { counter-increment: count; }
- .ci-minus-l { counter-increment: count -1; }
- .ci-none-l { counter-increment: none; }
- .ci-i-l { counter-increment: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-counter-increment/dist/counter-increment.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.ci-plus` | `counter-increment: count;` |
+| `.ci-minus` | `counter-increment: count -1;` |
+| `.ci-none` | `counter-increment: none;` |
+| `.ci-i` | `counter-increment: inherit;` |
+| `.ci-plus-s` | `counter-increment: count;` |
+| `.ci-minus-s` | `counter-increment: count -1;` |
+| `.ci-none-s` | `counter-increment: none;` |
+| `.ci-i-s` | `counter-increment: inherit;` |
+| `.ci-plus-m` | `counter-increment: count;` |
+| `.ci-minus-m` | `counter-increment: count -1;` |
+| `.ci-none-m` | `counter-increment: none;` |
+| `.ci-i-m` | `counter-increment: inherit;` |
+| `.ci-plus-l` | `counter-increment: count;` |
+| `.ci-minus-l` | `counter-increment: count -1;` |
+| `.ci-none-l` | `counter-increment: none;` |
+| `.ci-i-l` | `counter-increment: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.ci-plus-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/counter-increment.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/counter-increment.css` — formatted
+- `dist/counter-increment.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
